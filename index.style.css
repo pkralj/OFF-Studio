@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Gotham Black";
+  src: url(fonts/Gotham-Font/Gotham-Black.otf) format(opentype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.background-video {
+  width: 100vw;
+  height: 120vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+  flex: 1;
+}
+
+.logo-video {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  }
+
+.container {
+  display: flex;
+  text-align: center;
+  flex: 2;
+}
+
+.left, .right {
+  display: flex;
+  flex: 2;
+}
+
+main {
+  flex: 3;
+  font-family: "Gotham Black";
+  color: white;
+  justify-content: center;
+}
+
+.services-list {
+  list-style-type: none;
+  padding-top: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding-top: 10px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  color: wheat;
+}
+
+
+
+
+
+
+
+#extra-space {
+  height: 20vh;
+  width: 100vw;
+  border: 1px solid blue;
+}
+
+
+
+
+
+
+
+.video-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  border: 1px solid red;
+}
+
+.video-content {
+  width: 70vw;
+  height: auto;
+  display: flex;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid white;
+  
+}
+
+
+
+
+
+
+
+
+#footer {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+#footer p {
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+  color: transparent;
+  text-shadow: 0 0 2px #fff;
+  font-family: "Gotham Black";
+}
