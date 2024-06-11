@@ -10,6 +10,10 @@
   width: 100vw;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   justify-content: center;
@@ -116,17 +120,49 @@ main {
   
 }
 
-.services-list {
+.dino-list {
   list-style-type: none;
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
   font-family: "Gotham Black";
   color: white;
+  margin: 0;
+}
+
+.services-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gotham Black";
+  color: white;
+  text-shadow: 0 0 0px #fff;
+  margin: 5px 0 5px 0;
+}
+
+.year-plus-works-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gotham Black";
+  color: white;
+  text-shadow: 0 0 0px #fff;
+  margin: 0;
+}
+
+.year-plus-works-list li a {
+  text-decoration: none;
+  font-family: "Gotham Black";
+  color: white;
   text-shadow: 0 0 0px #fff;
 }
 
+.year-plus-works-list li a:hover {
+  color: wheat;
+}
+
 .nav-list {
+  padding-top: 20px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
