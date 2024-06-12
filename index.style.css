@@ -23,7 +23,7 @@ body {
 
 .background-video {
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -36,9 +36,22 @@ body {
 #page {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.empty-div {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -2;
 }
 
 .logo-flex-container {
@@ -49,18 +62,7 @@ body {
 
 .logo-flex-container-empty {
   display:flex;
-  flex: 2;
-}
-
-.div1 {
   flex: 1;
-  border: pink;
-  background-color: red;
-}
-
-.div2 {
-  flex:1;
-  background-color: green;
 }
 
 .logo-container {
@@ -71,11 +73,10 @@ body {
 }
 
 .logo-video {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  border: 1px solid green;
   }
 
 .container {
@@ -86,32 +87,7 @@ body {
 
 .left, .right {
   display: flex;
-  flex: 2;
-}
-
-.rightright {
-  display: flex;
-  flex:1;
-  flex-direction: column;
-}
-.right1 {
-  flex: 1;
-  background-color: grey;
-}
-
-.right2 {
-  flex: 1;
-  background-color: teal;
-}
-
-.right3 {
-  flex: 1;
-  background-color: yellow;
-}
-
-.right4 {
-  flex: 1;
-  background-color: yellowgreen;
+  flex: 4;
 }
 
 main {
@@ -122,11 +98,12 @@ main {
 
 .dino-list {
   list-style-type: none;
-  padding-top: 100px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   font-family: "Gotham Black";
-  color: white;
+  text-shadow: 0 0 2px #fff;
+  color: transparent;
   margin: 0;
 }
 
@@ -135,8 +112,8 @@ main {
   display: flex;
   justify-content: space-between;
   font-family: "Gotham Black";
-  color: white;
-  text-shadow: 0 0 0px #fff;
+  color: transparent;
+  text-shadow: 0 0 2px #fff;
   margin: 5px 0 5px 0;
 }
 
@@ -145,20 +122,21 @@ main {
   display: flex;
   justify-content: space-between;
   font-family: "Gotham Black";
-  color: white;
-  text-shadow: 0 0 0px #fff;
+  color: transparent;
+  text-shadow: 0 0 2px #fff;
   margin: 0;
 }
 
 .year-plus-works-list li a {
   text-decoration: none;
   font-family: "Gotham Black";
-  color: white;
-  text-shadow: 0 0 0px #fff;
+  color: transparent;
+  text-shadow: 0 0 2px #fff;
+  
 }
 
 .year-plus-works-list li a:hover {
-  color: wheat;
+  text-shadow: 0 0 2px #dddbdb;
 }
 
 .nav-list {
@@ -172,15 +150,12 @@ main {
   text-decoration: none;
   font-family: "Gotham Black";
   color: transparent;
-  text-shadow: 0 0 1px #fff;
+  text-shadow: 0 0 2px #fff;
 }
 
 .nav-list li a:hover {
-  color: wheat;
+  text-shadow: 0 0 2px #dddbdb;
 }
-
-
-
 
 
 
@@ -188,7 +163,6 @@ main {
 #extra-space {
   height: 20vh;
   width: 100vw;
-  border: 1px solid blue;
 }
 
 
@@ -216,7 +190,12 @@ main {
   height: auto;
   margin: 0 auto;
   border: 1px solid white;
-  
+  position: relative;
+  z-index: 1;
+}
+
+.no-border {
+  border: none;
 }
 
 
@@ -241,4 +220,5 @@ main {
   color: transparent;
   text-shadow: 0 0 2px #fff;
   font-family: "Gotham Black";
+  font-size: 10px;
 }
