@@ -1,9 +1,29 @@
 @font-face {
   font-family: "Gotham Black";
-  src: url(fonts/Gotham-Font/Gotham-Black.otf) format(opentype);
+  src: url('fonts/Gotham-Font/Gotham-Black.otf') format(opentype);
   font-weight: normal;
   font-style: normal;
 }
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeIn {
+  animation: fadeIn 500ms forwards;
+}
+
+@keyframes fadeOut {
+  from{opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fadeOut {
+  animation: fadeOut 500ms forwards;
+}
+
+
 
 :root {
   height: 100vh;
@@ -19,6 +39,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: black;
+  transition: opacity 1s ease-in-out;
 }
 
 .background-video {
@@ -51,7 +73,8 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: -2;
+  z-index: 1000;
+  background:black;
 }
 
 .logo-flex-container {
@@ -72,7 +95,7 @@ body {
   align-content: center;
 }
 
-.logo-video {
+#logo-video {
   width: 100%;
   height: auto;
   display: block;
