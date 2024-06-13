@@ -91,3 +91,42 @@
     color: transparent;
     text-shadow: 0 0 2px #fff;
   }
+
+  @media only screen and (max-width: 400px) {
+    #x-button {
+      background-color: black;
+      font-family: "Gotham Black";
+      font-size: small;
+      color: transparent;
+      text-shadow: 0 0 2px #fff;
+      position: absolute;
+      right: 0;
+      border: none;
+      
+    }
+    p {
+      font-size: small;
+      font-family: "Gotham Black";
+      color: transparent;
+      text-shadow: 0 0 2px #fff;
+    }
+  } 
+  @media only screen and (max-width: 325px) {
+    #x-button {
+      background-color: black;
+      font-family: "Gotham Black";
+      font-size: x-small;
+      color: transparent;
+      text-shadow: 0 0 2px #fff;
+      position: absolute;
+      right: 0;
+      border: none;
+      
+    }
+    p {
+      font-size: x-small;
+      font-family: "Gotham Black";
+      color: transparent;
+      text-shadow: 0 0 2px #fff;
+    }
+  } 

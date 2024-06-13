@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     document.getElementById("footer").style.display = "flex";
-  }, 5000);
+  }, 3000);
   
-  window.addEventListener("scroll", function() {
-    document.getElementById("footer").style.opacity = "0";
-  });
+  setTimeout(function() {
+    window.addEventListener("scroll", function() {
+      document.getElementById("footer").style.opacity = "0";
+    });
+  }, 2000);
 });
 
 const videos = document.querySelectorAll('.video-content');
