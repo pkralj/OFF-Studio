@@ -78,6 +78,15 @@
     justify-content: center;
     align-items:end;
   }
+  .email a {
+    text-decoration: none;
+    font-family: "Gotham Black";
+    color: transparent;
+    text-shadow: 0 0 2px #fff;
+  }
+  .email a:hover {
+    text-shadow: 0 0 2px #dddbdb;
+  }
 
   .insta {
     display: flex;
