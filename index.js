@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 500);
     },0 );
   });
-  
 });
 
 

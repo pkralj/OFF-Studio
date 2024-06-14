@@ -85,54 +85,43 @@
 
   form ::placeholder {
     color: transparent;
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 2px white;
   }
 
   input, textarea {
-    background-color: darkgray;
-    color: black;
+    background-color: rgb(84, 83, 83);
+    color: white;
     width: 400px;
   }
   
+  input[type=text] {
+    color: transparent;
+    text-shadow: 0 0 1px white;
+  }
+
   textarea {
     height: 100px;
   }
 
-  @media only screen and (max-width: 400px) {
-    #x-button {
-      background-color: black;
-      font-family: "Gotham Black";
-      font-size: small;
-      color: transparent;
-      text-shadow: 0 0 2px #fff;
-      position: absolute;
-      right: 0;
-      border: none;
-      
-    }
-    p {
-      font-size: small;
-      font-family: "Gotham Black";
-      color: transparent;
-      text-shadow: 0 0 2px #fff;
-    }
-  } 
-  @media only screen and (max-width: 325px) {
-    #x-button {
-      background-color: black;
-      font-family: "Gotham Black";
-      font-size: x-small;
-      color: transparent;
-      text-shadow: 0 0 2px #fff;
-      position: absolute;
-      right: 0;
-      border: none;
-      
-    }
-    p {
-      font-size: x-small;
-      font-family: "Gotham Black";
-      color: transparent;
-      text-shadow: 0 0 2px #fff;
+  #submit {
+    background-color: rgb(84, 83, 83);
+    color: transparent;
+    text-shadow: 0 0 1px white;
+  }
+
+  #errors {
+    flex: 1;
+    color: transparent;
+    text-shadow: 0 0 2px #fff;
+    margin: 0;
+  }
+
+  #errors p {
+    margin: 5px;
+  }
+
+  @media only screen and (max-width: 430px) {
+    input, textarea {
+      width: 300px;
     }
   } 
