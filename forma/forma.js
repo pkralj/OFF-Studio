@@ -1,5 +1,4 @@
-document.getElementById('x-button').addEventListener('click', function(e) {
-  e.preventDefault();
+document.getElementById('x-button').addEventListener('click', function() {
   document.body.classList.add('fadeOut');
   setTimeout(function () {
     window.location.href = '../contact/contact.html';

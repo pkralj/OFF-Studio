@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     document.getElementById("footer").style.display = "flex";
-  }, 3000);
+  }, 5000);
   
   setTimeout(function() {
     window.addEventListener("scroll", function() {
